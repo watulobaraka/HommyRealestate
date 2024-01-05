@@ -1,10 +1,14 @@
 const hamburer = document.querySelector(".hamburger");
 const navList = document.querySelector(".nav-list");
 
- function openPopup() {
-        document.getElementById("overlay").style.display = "flex";
+// Function to open the popup after 30 seconds
+    function openPopupWithDelay() {
+        setTimeout(function () {
+            document.getElementById("overlay").style.display = "flex";
+        }, 30000); // 30 seconds in milliseconds
     }
 
+    // Function to close the popup
     function closePopup() {
         document.getElementById("overlay").style.display = "none";
     }
@@ -15,6 +19,9 @@ const navList = document.querySelector(".nav-list");
         event.preventDefault();
         closePopup();
     });
+
+    // Call the function to open the popup after 30 seconds
+    openPopupWithDelay();
 
 if (hamburer) {
   hamburer.addEventListener("click", () => {
