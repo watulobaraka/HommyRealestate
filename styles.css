@@ -9,6 +9,73 @@
   --grey2: #e9d7d3;
 }
 
+/* Style the button that opens the form */
+.open-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the form container */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Style the form header and form container */
+.form-container {
+  max-width: 300px;
+  padding: 20px;
+  background-color: white;
+}
+
+/* Style the form elements */
+form input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Style the form submit button */
+form .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the form cancel button */
+form .cancel {
+  background-color: #f44336;
+}
+
+/* Clear floats after the form elements */
+form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the form stack on top of each other */
+@media screen and (max-width: 600px) {
+  .form-container {
+    max-width: 100%;
+  }
+}
+
+
 /* Basic Reset */
 *,
 *::before,
