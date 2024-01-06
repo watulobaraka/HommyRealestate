@@ -7,3 +7,15 @@ if (hamburer) {
     navList.classList.toggle("open");
   });
 }
+
+setTimeout(function() {
+    openForm();
+  }, 30000); // 30 seconds in milliseconds
+
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
