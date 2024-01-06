@@ -10,7 +10,7 @@ if (hamburer) {
 
 setTimeout(function() {
     openForm();
-  }, 30000); // 30 seconds in milliseconds
+  }, 10000); // 30 seconds in milliseconds
 
   function openForm() {
     document.getElementById("myForm").style.display = "block";
